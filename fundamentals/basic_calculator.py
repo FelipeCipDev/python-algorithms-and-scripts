@@ -23,26 +23,32 @@ Bonus (Optional):
 - Add support for more operations (square root, exponentiation, modulo)
 - Add a simple menu interface
 """
+print("\nAt any moment, type 'exit' to close this program -\n")
 
-values = input("Please, type 2 numbers separated by a space (' '): ").split(" ")
-""" 
-Use of the brackets '[...]' implies the creation of an array; The operation used, firstly, specifies the 
-variable type to convert to, shown by the 'float(n)'; Then, it effectuates a loop using the 'for n in numbers' 
-to apply the type conversion for each item/value/element 
-"""
-values = [int(v) for v in values]
+def CalculateOperation():
+    values = input("Please, type 2 numbers separated by a space (' '): ").split(" ")
 
-op = input("Select the desired mathematical equation, type... " \
-"\n + _ Addition; \n - _ Subtraction; \n * - Multiply; \n % - Division \n\nOpção selecionada: ")
+    """ 
+    Use of the brackets '[...]' implies the creation of an array; The operation used, firstly, specifies the 
+    variable type to convert to, shown by the 'float(n)'; Then, it effectuates a loop using the 'for n in numbers' 
+    to apply the type conversion for each item/value/element 
+    """
+    values = [int(v) for v in values]
 
-result = 0.0
-if op == "+":
-    result = sum(values)
-elif op == "-":
-    result = values[0] - values[1]
-elif op == "*":
-    result = values[0] * values[1]
-else:
-    result = values[0] / values[1]
+    op = input("Select the desired mathematical equation, type... " \
+    "\n + _ Addition; \n - _ Subtraction; \n * - Multiply; \n % - Division \n\nOpção selecionada: ")
 
-print(f"\n Resultado da arredondado (2 casas decimais): {result:.2f}")
+    result = 0.0
+    if op == "+":
+        result = sum(values)
+    elif op == "-":
+        result = values[0] - values[1]
+    elif op == "*":
+        result = values[0] * values[1]
+    else:
+        result = values[0] / values[1]
+
+    print(f"\nResultado da arredondado (2 casas decimais): {result:.2f}\n-----------------------------------------------------")
+    CalculateOperation()
+
+CalculateOperation()
