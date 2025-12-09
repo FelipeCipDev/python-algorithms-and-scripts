@@ -25,6 +25,11 @@ Bonus (Optional):
 """
 
 values = input("Please, type 2 numbers separated by a space (' '): ").split(" ")
+""" 
+Use of the brackets '[...]' implies the creation of an array; The operation used, firstly, specifies the 
+variable type to convert to, shown by the 'float(n)'; Then, it effectuates a loop using the 'for n in numbers' 
+to apply the type conversion for each item/value/element 
+"""
 values = [int(v) for v in values]
 
 op = input("Select the desired mathematical equation, type... " \
