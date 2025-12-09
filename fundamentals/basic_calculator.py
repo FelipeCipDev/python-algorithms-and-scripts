@@ -1,0 +1,27 @@
+"""
+Description:
+Create a Python program that functions as a simple interactive calculator.
+
+The program must:
+- Ask the user to input two numerical values
+- Ask the user to choose one mathematical operation:
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Perform the selected operation
+- Display the result in a clear format
+
+Requirements:
+- Validate all user inputs
+- Prevent division by zero (show a user-friendly message instead)
+- The program must keep running until the user chooses to exit
+- Use functions to organize the logic when possible
+
+Bonus (Optional):
+- Allow the user to chain operations without restarting the program
+- Add support for more operations (square root, exponentiation, modulo)
+- Add a simple menu interface
+"""
+
+print()
