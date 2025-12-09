@@ -33,7 +33,7 @@ def CalculateOperation():
             print("\nExiting program...")
             exit()
         print("Sorry, try again, this time type 2 values...")
-        CalculateOperation()
+        return CalculateOperation()
     try:
         """ 
         Use of the brackets '[...]' implies the creation of an array; The operation used, firstly, specifies the 
@@ -43,7 +43,7 @@ def CalculateOperation():
         values = [int(v) for v in values]
     except ValueError:
         print("Sorry, try again, this time with a valid numerical value...")
-        CalculateOperation()
+        return CalculateOperation()
 
     op = input("Select the desired mathematical equation, type... " \
     "\n + _ Addition; \n - _ Subtraction; \n * - Multiply; \n % - Division \n\nOpção selecionada: ")
