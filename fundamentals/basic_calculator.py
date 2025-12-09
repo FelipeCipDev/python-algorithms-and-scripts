@@ -26,4 +26,8 @@ Bonus (Optional):
 
 values = input("Please, type 2 numbers separated by a space (' '): ").split(" ")
 values = [int(v) for v in values]
-print(values)
+
+op = input("Select the desired mathematical equation, type... " \
+"\n + _ Addition; \n - _ Subtraction; \n * - Multiply; \n % - Division \n\n")
+
+print(op)
