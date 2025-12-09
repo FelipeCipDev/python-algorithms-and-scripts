@@ -29,6 +29,9 @@ def CalculateOperation():
     values = input("Please, type 2 numbers separated by a space (' '): ").split(" ")
 
     if (len(values) < 2) or (len(values) > 2):
+        if len(values) == 1 and values[0] == "exit":
+            print("\nExiting program...")
+            exit()
         print("Sorry, try again, this time type 2 values...")
         CalculateOperation()
     try:
