@@ -24,4 +24,6 @@ Bonus (Optional):
 - Add a simple menu interface
 """
 
-print()
+values = input("Please, type 2 numbers separated by a space (' '): ").split(" ")
+values = [int(v) for v in values]
+print(values)
