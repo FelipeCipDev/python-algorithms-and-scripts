@@ -35,7 +35,7 @@ values = [int(v) for v in values]
 op = input("Select the desired mathematical equation, type... " \
 "\n + _ Addition; \n - _ Subtraction; \n * - Multiply; \n % - Division \n\nOpção selecionada: ")
 
-result = 0
+result = 0.0
 if op == "+":
     result = sum(values)
 elif op == "-":
@@ -45,4 +45,4 @@ elif op == "*":
 else:
     result = values[0] / values[1]
 
-print(f"\n Resultado da operação: {result}")
+print(f"\n Resultado da arredondado (2 casas decimais): {result:.2f}")
