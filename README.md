@@ -1,8 +1,4 @@
-Here is a **clean, well-formatted, GitHub-ready README** for your repository:
 
----
-
-```markdown
 # 🐍 python-algorithms-and-scripts
 
 Repository dedicated to developing Python scripts focused on problem-solving, challenges, algorithms, data manipulation, and automation tasks.
