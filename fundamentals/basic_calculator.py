@@ -33,6 +33,16 @@ to apply the type conversion for each item/value/element
 values = [int(v) for v in values]
 
 op = input("Select the desired mathematical equation, type... " \
-"\n + _ Addition; \n - _ Subtraction; \n * - Multiply; \n % - Division \n\n")
+"\n + _ Addition; \n - _ Subtraction; \n * - Multiply; \n % - Division \n\nOpção selecionada: ")
 
-print(op)
+result = 0
+if op == "+":
+    result = sum(values)
+elif op == "-":
+    result = values[0] - values[1]
+elif op == "*":
+    result = values[0] * values[1]
+else:
+    result = values[0] / values[1]
+
+print(f"\n Resultado da operação: {result}")
